@@ -5,3 +5,33 @@
  * Template: blocksy
  * Text Domain: blocksy
  */
+
+.planty-footer {
+  background-color: white;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.planty-footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.planty-footer-1 {
+  width: 100%;
+  background-color: white;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.planty-footer-1 a {
+  color: #000;
+  text-align: center;
+  font-family: Syne;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
