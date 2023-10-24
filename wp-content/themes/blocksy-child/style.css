@@ -35,3 +35,128 @@
   font-weight: 400;
   line-height: normal;
 }
+
+header {
+  margin: 0px;
+  padding: 0px !important;
+  height: 80px;
+  width: 100%;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white; /* Couleur de fond du header */
+  color: #fff; /* Couleur du texte */
+}
+
+/* Style du logo */
+.logo {
+  padding-left: 32px;
+}
+.logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Style du menu */
+.menu {
+  align-items: center;
+  gap: 60px;
+}
+.menu ul {
+  gap: 60px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black; /* Couleur des liens du menu */
+}
+
+/* Style du bouton "Commander" */
+.commander {
+  background-color: #ff6600; /* Couleur de fond du bouton */
+  color: #fff; /* Couleur du texte du bouton */
+  height: 80px;
+  width: 236px;
+  align-items: center;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styles pour les écrans de largeur <= 768px (tablettes et mobiles) */
+/* Media query pour les tablettes (largeur maximale de 768px) */
+@media screen and (max-width: 768px) {
+  header {
+    margin: 0px;
+    padding: 0px !important;
+    height: 80px;
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white; /* Couleur de fond du header */
+    color: #fff; /* Couleur du texte */
+  }
+}
+
+/* Media query pour les mobiles (largeur maximale de 480px) */
+@media screen and (max-width: 480px) {
+  header {
+    margin: 0px;
+    padding: 0px !important;
+    height: 80px;
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    background-color: white; /* Couleur de fond du header */
+    color: #fff; /* Couleur du texte */
+  }
+  .menu {
+    align-items: center;
+    gap: 8px;
+    width: 70%;
+  }
+  .logo {
+    padding-left: 16px;
+    width: 25%;
+  }
+  .logo img {
+    max-width: 75px;
+    height: auto;
+  }
+  .menu ul {
+    gap: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .menu a {
+    font-size: 12px;
+    text-decoration: none;
+    color: black; /* Couleur des liens du menu */
+  }
+  .commander {
+    height: 80px;
+    width: 105px;
+    align-items: center;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+  }
+  .menu li {
+    margin-right: 4px;
+  }
+}
