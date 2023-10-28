@@ -9,11 +9,12 @@
  * @since plenty 0.1
  */
 
-$home = home_url('/');
 ?>
 <footer class="planty-footer">
     <div>
-        <div class="planty-footer-1"><a href="<?php echo $home ?>">Mentions légales</a></div>
+        <div class="planty-footer-1">
+            <?php wp_nav_menu(array('theme_location' => 'footer', 'menu_class' => '')); ?>
+        </div>
     </div>
 </footer>
 <?php wp_footer(); ?>

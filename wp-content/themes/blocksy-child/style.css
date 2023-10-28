@@ -6,6 +6,236 @@
  * Text Domain: blocksy
  */
 
+.number-input {
+  display: flex;
+  align-items: center;
+}
+
+.number-input input {
+  width: 100px !important;
+  text-align: center;
+  font-size: 16px;
+  height: 60px !important;
+  flex-shrink: 0;
+  fill: #fff;
+  border: 1px solid white;
+  border-radius: 5px 0px 0px 5px !important;
+}
+
+.input-buttons {
+  display: inline-grid;
+}
+
+.input-buttons button {
+  width: 31px;
+  height: 30px;
+  font-size: 19px;
+}
+
+.butt1 {
+  text-align: center;
+  background-color: #dc9f96;
+  color: white;
+  border: none;
+  border-radius: 0px 5px 0px 0px;
+}
+
+.butt2 {
+  text-align: center;
+  background-color: #dc9f96;
+  color: white;
+  border: none;
+  border-top: 1px solid white;
+  border-radius: 0px 0px 5px 0px;
+}
+
+.butt3 {
+  display: flex;
+  width: 100px;
+  height: 60px;
+  padding: 9px 0px 10px 0px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 5px;
+  background: #e0b9b4;
+  color: white;
+}
+
+.bas-image {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.for-4 {
+  display: flex;
+  width: 1000px;
+  gap: 16px;
+  align-content: center;
+  justify-content: center;
+}
+
+.for-1 {
+  width: 244px;
+}
+
+.div-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 244px;
+  height: 130px;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  justify-content: center;
+}
+.div-image h1 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.form-div {
+  margin-top: 40px;
+  border-top: 1px solid white;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+  display: flex;
+}
+
+.form-div h1 {
+  padding-bottom: 30px;
+  padding-left: 60px;
+  color: #fff;
+  font-family: Syne;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.form-div-2 {
+  margin: 0px;
+  padding: 0px;
+  width: 50%;
+}
+.form-div-3 {
+  border-left: 1px solid white;
+  margin: 0px;
+  padding: 0px;
+  width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .form-div h1 {
+    padding-bottom: 40px;
+    padding-left: 16px;
+    color: #fff;
+    font-family: Syne;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .form-div-3 {
+    border-left: none;
+  }
+  .for-4 {
+    flex-wrap: wrap;
+  }
+
+  .for-1 {
+    flex: 0 0 calc(50% - 5px);
+    margin: 5px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form-div {
+    margin-top: 20px;
+    border-top: 1px solid white;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    width: 100%;
+    display: block;
+  }
+  .form-div-2 {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  .form-div-3 {
+    border-left: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  .form-div h1 {
+    padding-bottom: 40px;
+    padding-left: 16px;
+    color: #fff;
+    font-family: Syne;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .bas-image {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .for-4 {
+    display: block;
+    width: 320px;
+    gap: 16px;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .for-1 {
+    width: 280px;
+    margin-bottom: 20px;
+  }
+
+  .div-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 280px;
+    height: 130px;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .div-image h1 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+.wpcf7-spinner {
+  display: none !important;
+}
+
 .planty-footer {
   background-color: white;
   height: 60px;
@@ -63,6 +293,10 @@ header {
   align-items: center;
   gap: 60px;
 }
+#menu-footer {
+  list-style: none;
+  padding-inline-start: 0px;
+}
 .menu ul {
   gap: 60px;
   list-style: none;
@@ -72,7 +306,7 @@ header {
 }
 
 .menu li {
-  margin-right: 20px;
+  margin-right: 0px;
 }
 
 .menu a {
@@ -82,18 +316,36 @@ header {
 
 /* Style du bouton "Commander" */
 .commander {
-  background-color: #ff6600; /* Couleur de fond du bouton */
+  background-color: #dc9f96; /* Couleur de fond du bouton */
   color: #fff; /* Couleur du texte du bouton */
   height: 80px;
   width: 236px;
   align-items: center;
+  justify-content: center;
   text-align: center;
   border: none;
   cursor: pointer;
 }
+.commander li a {
+  color: white;
+}
 
 /* Styles pour les écrans de largeur <= 768px (tablettes et mobiles) */
 /* Media query pour les tablettes (largeur maximale de 768px) */
+@media screen and (max-width: 1200px) {
+  header {
+    margin: 0px;
+    padding: 0px !important;
+    height: 80px;
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white; /* Couleur de fond du header */
+    color: #fff; /* Couleur du texte */
+  }
+}
 @media screen and (max-width: 768px) {
   header {
     margin: 0px;
@@ -127,6 +379,7 @@ header {
     align-items: center;
     gap: 8px;
     width: 70%;
+    justify-content: end;
   }
   .logo {
     padding-left: 16px;

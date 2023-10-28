@@ -13,9 +13,6 @@
 ?>
 
 <?php
-$contact_link = plenty_get_page_link_by_title("Nous rencontrer");
-$order_link = plenty_get_page_link_by_title("Commander");
-$admin_url = get_admin_url();
 $home = home_url('/');
 ?>
 
@@ -47,14 +44,7 @@ $global_header = ob_get_clean();
             <a href="<?php echo $home; ?>"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/logo.png" alt="logo"></a>
         </div>
         <nav class="menu">
-            <ul>
-                <li><a href="<?php echo $contact_link; ?>">Nous rencontrer</a></li>
-                <?php if (is_user_logged_in()) : ?>
-                    <li><a href="<?php echo admin_url(); ?>">Admin</a></li>
-                <?php endif; ?>
-            </ul>
-            <a href="<?php echo $order_link; ?>"> <button class="commander">Commander</button>
-            </a>
-
+            <?php wp_nav_menu(array('theme_location' => 'main', 'menu_class' => '')); ?>
+            <?php wp_nav_menu(array('theme_location' => 'order', 'menu_class' => 'commander')); ?>
         </nav>
     </header>
