@@ -32,11 +32,6 @@ $home = home_url('/');
 
     <?php wp_head(); ?>
 </head>
-<?php
-ob_start();
-blocksy_output_header();
-$global_header = ob_get_clean();
-?>
 
 <body <?php body_class(); ?> <?php echo blocksy_body_attr() ?>>
     <header>

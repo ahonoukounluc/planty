@@ -16,7 +16,7 @@ function wp_planty_setup()
 
 //Enqueue style
 
-function add_order_button($items, $args)
+function add_admin_button($items, $args)
 {
 	$admin_url = get_admin_url();
 
@@ -27,7 +27,7 @@ function add_order_button($items, $args)
 	}
 	return $items;
 }
-add_filter('wp_nav_menu_items', 'add_order_button', 10, 2);
+add_filter('wp_nav_menu_items', 'add_admin_button', 10, 2);
 
 
 //Enqueue style
